@@ -3,15 +3,17 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="style.css"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather-Dashboard</title> <!-- title of Document page in the tab-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+
+
 </head>
 
 <body>
@@ -53,43 +55,57 @@
                     <li class="list-group-item">Atlanta</li>
 
                 </ul>
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
-                    <!--Created my next set of columbs which is going to take up 2 thirds of the page-->
-                    <div class="card-body mb3">
-                        <!-- created a card body class which is going to my values in a card-->
-                        <div class="card-body">
-                            <h5 class="card-title">Atlanta (07-07-2020)</h5>
-                            <!-- This card holds Atlantas  weather Values-->
-                            <p>Temperature: 90.9 F</p>
-                            <p>Humidity: 41%</p>
-                            <p>Wind Speed: 4.7 MPH</p>
-                            <!-- Used the Button danger bootstrap but made it a span to take out the fuctionality of the button-->
-                            <p>UV Index <span class="btn btn-danger">9.49</span></p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
+                <!--Created my next set of columbs which is going to take up 2 thirds of the page-->
+                <div class="card mb-3">
+                    <!-- created a card body class which is going to my values in a card-->
+                    <div class="card-body">
+                        <h5 class="card-title">Atlanta (07-07-2020)</h5>
+                        <!-- This card holds Atlantas  weather Values-->
+                        <p>Temperature: 90.9 F</p>
+                        <p>Humidity: 41%</p>
+                        <p>Wind Speed: 4.7 MPH</p>
+                        <!-- Used the Button danger bootstrap but made it a span to take out the fuctionality of the button-->
+                        <p>UV Index <span class="btn btn-danger">9.49</span></p>
+                    </div>
+                </div>
+                <h3> 5-Day Forecast:</h3>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4 col-xl-4">
+                        <div class="card forecast">
+                            <p class="card-title">07/08/2020</p>
+
+
+
+                            <i class="fas  fa-cloud-rain fa-2x icon"></i>
 
                         </div>
                     </div>
+
                 </div>
+
+
+
             </div>
+
         </div>
-
     </div>
 
 
-    </div>
 
-    </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <!- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
