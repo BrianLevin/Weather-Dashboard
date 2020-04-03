@@ -10,3 +10,14 @@
 .row{                  /* This will push the rows down 50px from the top of the page */
     margin-top: 50px;
 }
+
+.forecast {  /* This will style the forecast on on the html page */
+    background-color:  rgb(0, 96, 128);
+    color: #fff;
+    height: 250px;
+}
+
+.icon {                 /* This will  move the weather icon away from the P tags within the card */
+    padding-top:  20px;
+    padding-bottom: 50px; 
+}
