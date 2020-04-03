@@ -13,4 +13,7 @@ $(document).ready(function () { // This will start a jquery values
 
     };
 
-})
+    // sends the Git Request to the server
+    xhttp.opem("GET", `https://api.openweathermap.org/data/2.5/forecast?q=Austin,Texas&appid=bcd5953a34ae60d3a19dd457376dfad5`, true);
+    xhttp.send();
+});
