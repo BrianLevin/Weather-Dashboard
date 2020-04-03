@@ -1,12 +1,12 @@
 .title{
-    background-color: grey;
-    text-align: center;
+    background-color: grey;   /* This formats the tiles of the pages color: text alingment, and height on the page */
+    text-align: center; 
     height: 50px;
 }
-.title h1{
+.title h1{        /*  The tile of the h1 title will be white */
  color : #fff; 
 }
 
-.row{
+.row{                  /* This will push the rows down 50px from the top of the page */
     margin-top: 50px;
 }
