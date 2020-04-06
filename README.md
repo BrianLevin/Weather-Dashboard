@@ -1,7 +1,7 @@
 
 # Weather Dashboard
 
-
+![](images/screenshot.png) 
 
 ## Assignment objectives:
 
