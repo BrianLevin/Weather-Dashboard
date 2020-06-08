@@ -30,3 +30,5 @@ $(document).ready(function () {
 
             });
 
+        // clear any old content
+        $("#today").empty();
