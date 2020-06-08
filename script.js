@@ -6,5 +6,8 @@ $(document).ready(function () {
 
         searchWeather(searchValue);
     });
+    $(".history").on("click", "li", function () {
+        searchWeather($(this).text());
+    });
 
 });
