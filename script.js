@@ -41,7 +41,15 @@ $(document).ready(function () {
         var cardBody = $("<div>").addClass("card-body");
         var img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
         // merge and add to page
+
         title.append(img);
         cardBody.append(title, temp, humid, wind);
         card.append(cardBody);
         $("#today").append(card);
+
+        // call follow-up api endpoints
+        getForecast(searchValue);
+        getUVIndex(data.coord.lat, data.coord.lon);
+    }
+});
+  }
