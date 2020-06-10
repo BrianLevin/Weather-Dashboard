@@ -109,3 +109,15 @@ function getUVIndex(lat, lon) {
         }
     });
 }
+
+// get current history, if any
+var history = JSON.parse(window.localStorage.getItem("history")) || [];
+
+if (history.length > 0) {
+    searchWeather(history[history.length - 1]);
+}
+
+for (var i = 0; i < history.length; i++) {
+    makeRow(history[i]);
+}
+});
