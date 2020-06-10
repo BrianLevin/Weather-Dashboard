@@ -85,3 +85,11 @@ function getForecast(searchValue) {
         }
     });
 }
+function getUVIndex(lat, lon) {
+    $.ajax({
+        type: "GET",
+        url: "http://api.openweathermap.org/data/2.5/uvi?appid=7ba67ac190f85fdba2e2dc6b9d32e93c&lat=" + lat + "&lon=" + lon,
+        dataType: "json",
+        success: function (data) {
+            var uv = $("<p>").text("UV Index: ");
+            var btn = $("<span>").addClass("btn btn-sm").text(data.value);
