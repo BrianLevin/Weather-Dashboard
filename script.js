@@ -62,3 +62,5 @@ function getForecast(searchValue) {
         success: function (data) {
             // overwrite any existing content with title and empty row
             $("#forecast").html("<h4 class=\"mt-3\">5-Day Forecast:</h4>").append("<div class=\"row\">");
+            // loop over all forecasts (by 3-hour increments)
+            for (var i = 0; i < data.list.length; i++) {
