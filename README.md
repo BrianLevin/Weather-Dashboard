@@ -30,3 +30,7 @@ This weather Application shows the current forecast in a selected city. The curr
 - Moment JS
 - API Key
 
+## Email:
+
+bml201095@gmail.com
+
